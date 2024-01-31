@@ -26,10 +26,8 @@ for (let i = 1; i <= 100; i++) {
 
         // visualizzazione in pagina
         newElement.innerText = "fizzbuzz";
-
-        // controllo per fizzbuzz
-        console.log("fizzbuzz");
-
+        // aggiunta classe a "box" per stilizzazione
+        newElement.className += " fizz-buzz"
 
 
     // ALTRIMENTI se i numeri sono solo multipli di 3
@@ -37,10 +35,8 @@ for (let i = 1; i <= 100; i++) {
 
         // visualizzazione in pagina
         newElement.innerText = "fizz";
-
-        // controllo per fizz
-        console.log("fizz");
-
+        // aggiunta classe a "box" per stilizzazione 
+        newElement.className += " fizz"
 
 
     // ALTRIMENTI si i numeri sono solo multipli di 5
@@ -48,9 +44,10 @@ for (let i = 1; i <= 100; i++) {
 
         // visualizzazione in pagina
         newElement.innerText = "buzz";
+        // aggiunta classe a "box" per stilizzazione 
+        newElement.className += " buzz";
 
-        // controllo per buzz
-        console.log("buzz");
+
     }
 
 
