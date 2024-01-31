@@ -1,31 +1,53 @@
-// Scrivi un programma che stampi in console i numeri da 1 a 100,
 
-// ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”.
-// Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
-
-
-// BONUS 1
-// Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
-
+// variabili DOM
 const gridElement = document.querySelector("#grid");
 
+
+// ciclo for
 for (let i = 1; i <= 100; i++) {
     // log dei numeri da 1 a 100
     console.log(i);
 
     // elemento html
     const newElement = document.createElement("div");
+    // stilizzazione elemento
+    newElement.className = "box";
+    newElement.innerHTML = i;
 
+    // visualizzazione in pagina di TUTTI i numeri
+    gridElement.append(newElement)
+
+
+
+
+    // CONTROLLI 
+    // SE i numeri sono multipli di 3 e di 5
     if (i % 3 == 0 && i % 5 == 0){
-        
+
+        // visualizzazione in pagina
+        newElement.innerText = "fizzbuzz";
+
         // controllo per fizzbuzz
         console.log("fizzbuzz");
 
+
+
+    // ALTRIMENTI se i numeri sono solo multipli di 3
     }else if ( i % 3 == 0){
+
+        // visualizzazione in pagina
+        newElement.innerText = "fizz";
 
         // controllo per fizz
         console.log("fizz");
+
+
+
+    // ALTRIMENTI si i numeri sono solo multipli di 5
     }else if ( i % 5 == 0){
+
+        // visualizzazione in pagina
+        newElement.innerText = "buzz";
 
         // controllo per buzz
         console.log("buzz");
