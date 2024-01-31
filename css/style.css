@@ -4,7 +4,6 @@ body{
 }
 
 
-
 /* caselle della griglia aggiunte in js */
 .box{
     display: flex;
@@ -16,7 +15,7 @@ body{
     height: 150px;
 }
 
-/* stilizzazione caselle */
+/* stilizzazione caselle con testo diverso*/
 .box.fizz-buzz{
     background-color: #f0466f;
 }

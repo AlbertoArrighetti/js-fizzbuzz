@@ -5,19 +5,20 @@ const gridElement = document.querySelector("#grid");
 
 // ciclo for
 for (let i = 1; i <= 100; i++) {
+
     // log dei numeri da 1 a 100
     console.log(i);
+
 
     // elemento html
     const newElement = document.createElement("div");
     // stilizzazione elemento
     newElement.className = "box fs-4 fw-semibold ";
-    newElement.innerHTML = i;
+    newElement.append(i);
+
 
     // visualizzazione in pagina di TUTTI i numeri
     gridElement.append(newElement)
-
-
 
 
     // CONTROLLI 
@@ -47,8 +48,5 @@ for (let i = 1; i <= 100; i++) {
         // aggiunta classe a "col" per stilizzazione 
         newElement.className += " buzz";
 
-
     }
-
-
 }
