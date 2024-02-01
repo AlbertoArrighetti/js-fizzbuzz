@@ -6,8 +6,8 @@ const gridElement = document.querySelector("#grid");
 // ciclo for
 for (let i = 1; i <= 100; i++) {
 
-    // log dei numeri da 1 a 100
-    console.log(i);
+    // // log dei numeri da 1 a 100
+    // console.log(i);
 
 
     // elemento html
